@@ -1,0 +1,28 @@
+{
+  "name": "lilactools",
+  "displayName": "lilacTools",
+  "description": "tools for working with the lilac templating language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "lilac"
+      }
+    ],
+    "grammars": [{
+      "language": "lilac",
+      "scopeName": "lilac.injection",
+      "path": "./syntaxes/injection.json",
+      "injectTo": ["text.html"],
+      "embeddedLanguages": {
+        "meta.embedded.block.superjs": "html"
+      }
+    }]
+  }
+}

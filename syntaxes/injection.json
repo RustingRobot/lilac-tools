@@ -1,0 +1,27 @@
+{
+	"scopeName": "lilac.injection",
+	"injectionSelector": "L:text.html.derivative -meta",
+	"patterns": [
+	  {
+		"include": "#bracketedText"
+	  }
+	],
+	"repository": {
+	  "bracketedText": {
+		"patterns": [
+		  {
+			"begin": "\\[\\[",
+			"end": "\\]\\]",
+			"name": "punctuation.definition.tag.begin.html",
+			"patterns": [
+			  {
+				"match": ".",
+				"name": "entity.name.tag.html"
+			  }
+			]
+		  }
+		]
+	  }
+	}
+  }
+  
